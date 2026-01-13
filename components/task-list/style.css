@@ -9,13 +9,17 @@
 
 @layer base {
     body {
-        @apply bg-black text-white w-full h-screen font-roboto;
+        @apply bg-black text-white w-full font-roboto;
     }
 }
 
 @layer components {
     .task-item {
         @apply bg-zinc-800 rounded-xl p-3 relative text-center hover:translate-y-[-3px] border-b-2 border-transparent hover:border-orange-800 transition cursor-pointer duration-300 grid grid-cols-1 gap-2 text-sm md:grid-cols-3;
+    }
+
+    .back-btn {
+        @apply mr-5 border-2 border-white text-white rounded-xl py-1.5 px-3 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
     }
 
     .link-btn {

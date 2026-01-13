@@ -8,15 +8,34 @@
 
     <!-- tailwind cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="/style.css">
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/components/task2/style.css">
 
     <title>Finding the object in array | Task 2 using switch case</title>
 </head>
 
 <body>
+    <!-- ***** header element ***** -->
+    <header class="w-full bg-black text-white">
+        <nav class="w-full">
+            <!-- company logo -->
+            <div class="container mx-auto flex justify-between items-center px-3 py-5">
+                <div class="w-28 h-8 flex gap-2 items-center">
+                    <img src="/img/cdn-white.svg" alt="CyberDude Networks Logo" class="w-full h-full object-contain">
+                </div>
+
+                <!-- back button -->
+                <a href="/components/task-list/" class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+                    </svg>
+                    <p class="font-semibold">Back</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
     <main class="w-full flex flex-col items-center p-3 py-10 gap-5">
         <h2 class="text-3xl bolder">Finding the object in array</h2>
 
