@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/cdn-favicon-512.png" />
+
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Palindrome finding problem | Task 1 in JavaScript</title>
+</head>
+
+<body>
+    <main class="w-full flex flex-col items-center p-3 py-10 gap-5">
+        <h2 class="text-3xl bolder">Palindrome Finding Methods</h2>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-5">
+            <p class="text-xl semibold mb-3">Question is to finding the palindrome words in the array</p>
+
+            <code class="bg-gray-200 rounded overflow-hidden p-5">
+                <p>let arr = ["Mango", "Orange", "Banana", "Pineapple", <span class="text-purple-700">"Noon"</span>, "Day", "Night", "Morning"];</p>
+            </code>
+        </div>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-16">
+            <p class="text-xl semibold mb-3">Feel free to use dev tools console tab after seeing the methods you can
+                find the palindrome words there</p>
+
+            <code class="bg-gray-200 rounded overflow-hidden p-5">
+                <p>Palindrome word is identified in methods, Noon</p>
+            </code>
+        </div>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-10 bg-gray-200 rounded overflow-hidden">
+            <h3 class="text-2xl semibold">Method 1</h3>
+
+            <p class="text-xl semibold mb-3">Using for loop only to findout</p>
+
+            <code class="bg-gray-100 rounded overflow-hidden p-5">
+                <p>for (let i = 0; i < arr.length; i++) {</p>
+                <p>let singleWord = arr[i];</p>
+                <p>let reversedWord = "";</p>
+
+                <p>for (let j = 0; j < singleWord.length; j++) {</p>
+                <p>reversedWord = singleWord[j].toLocaleLowerCase() + reversedWord;</p>
+                <p>}</p>
+
+                <p>if (reversedWord === singleWord.toLocaleLowerCase()) {</p>
+                <p>console.log('Palindrome word is identified in method 1,' + singleWord);</p>
+                <p>}</p>
+                <p>}</p>
+            </code>
+        </div>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-10 bg-gray-200 rounded overflow-hidden">
+            <h3 class="text-2xl semibold">Method 2</h3>
+
+            <p class="text-xl semibold mb-3">Using string methods to split, reverse and join the words</p>
+
+            <code class="bg-gray-100 rounded overflow-hidden p-5">
+                <p>for (let i = 0; i < arr.length; i++) {</p>
+                <p>let singleWord = arr[i];</p>
+                <p>let reversedWord = singleWord.toLocaleLowerCase().split("").reverse().join().replaceAll(',', '');</p>
+
+                <p>if (reversedWord === singleWord.toLocaleLowerCase()) {</p>
+                <p>console.log('Palindrome word is identified in method 2,' + singleWord);</p>
+                <p>}</p>
+                <p>}</p>
+            </code>
+        </div>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-10 bg-gray-200 rounded overflow-hidden">
+            <h3 class="text-2xl semibold">Method 3</h3>
+
+            <p class="text-xl semibold mb-3">Using while loop with a condition and using for...of loop for char in
+                string</p>
+
+            <code class="bg-gray-100 rounded overflow-hidden p-5">
+                <p>let i = 0;</p>
+                <p>while (i < arr.length) {</p>
+                <p>let singleWord = arr[i];</p>
+
+                <p> let reversedWord = "";</p>
+                <p>for (let char of singleWord) {</p>
+                <p>reversedWord = char.toLocaleLowerCase() + reversedWord;</p>
+                <p>}</p>
+
+                <p>if (reversedWord === singleWord.toLocaleLowerCase()) {</p>
+                <p>console.log('Palindrome word is identified in method 3,' + singleWord);</p>
+                <p>}</p>
+
+                <p>i++;</p>
+                <p>}</p>
+            </code>
+        </div>
+    </main>
+
+    <!-- main javascript -->
+    <script type="module" src="/components/task1/main.js"></script>
+</body>
+
+</html>

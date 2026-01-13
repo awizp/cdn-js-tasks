@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/cdn-favicon-512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwindcss style -->
+    <link rel="stylesheet" href="/components/task5/style.css">
+
+    <title>Employee names with their job role | Task 5</title>
+</head>
+
+<body class="bg-gray-100">
+    <main class="w-full py-10">
+
+        <h1 class="text-center text-2xl font-bold uppercase">Employee List</h1>
+
+        <section class="notes_section w-full flex justify-center items-center py-10 flex-col gap-5">
+
+            <!-- input selection -->
+            <form class="md:w-[60%] w-full bg-white rounded-xl p-5 space-y-3">
+                <div class="flex flex-col justify-center items-center gap-5">
+                    <div class="w-full">
+                        <input type="text" placeholder="Enter your name" id="name-input" class="input-style" required />
+                        <span class="error_name text-red-500 text-xs self-start hidden">* Please enter the name</span>
+                    </div>
+                    <div class="w-full">
+                        <input type="text" placeholder="Enter your job role" id="job-input" class="input-style"
+                            required />
+                        <span class="error_job text-red-500 text-xs self-start hidden">* Please enter the job
+                            role</span>
+                    </div>
+                </div>
+                <button class="submitbtn bg-blue-600 text-white rounded px-3 py-1 mt-5 cursor-pointer">Submit</button>
+            </form>
+
+            <!-- todo list -->
+            <ul id="todo-list" class="md:w-[60%] w-full space-y-5"></ul>
+
+        </section>
+    </main>
+
+    <!-- main javascript -->
+    <script type="module" src="/components/task5/main.js"></script>
+</body>
+
+</html>

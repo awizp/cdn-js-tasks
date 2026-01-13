@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/cdn-favicon-512.png" />
+
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Signup page | Task 3 in Javascript DOM</title>
+</head>
+
+<body class="w-full h-full flex justify-center items-center">
+    <main class="w-full h-full flex flex-col justify-center items-center gap-3 p-3">
+        <div class="font-bold text-3xl">
+            <h1>Signup Here!</h1>
+        </div>
+
+        <!-- signup page -->
+        <div class="w-full h-full flex justify-center items-center flex-col">
+            <form id="myForm">
+                <div class="my-3">
+                    <label for="fullname" class="text-sm font-semibold">
+                        Your Full Name:
+                    </label>
+                    <input class="w-full border border-gray-400 rounded outline-none p-2" type="text"
+                        placeholder="Enter your name" id="fullname" required>
+                </div>
+                <div class="my-3">
+                    <label for="email" class="text-sm font-semibold">
+                        Your Email:
+                    </label>
+                    <input class="w-full border border-gray-400 rounded outline-none p-2" type="text"
+                        placeholder="Enter your email" id="email" required>
+                </div>
+                <div class="my-3">
+                    <label for="age" class="text-sm font-semibold">
+                        Your Age:
+                    </label>
+                    <input class="w-full border border-gray-400 rounded outline-none p-2" type="text"
+                        placeholder="Enter your age" id="age" required>
+                </div>
+                <div class="my-3 mt-6">
+                    <button
+                        class="w-full border border-blue-500 bg-blue-500 hover:bg-blue-600 cursor-pointer rounded outline-none p-2 transition-colors text-white">Signup</button>
+                </div>
+            </form>
+
+            <!-- after signup elements -->
+            <div class="w-fit my-6 rounded bg-green-500 text-white gap-3 justify-center items-center p-3 hidden"
+                id="success-message">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 1024 1024">
+                    <path fill="currentColor"
+                        d="M512 64a448 448 0 1 1 0 896a448 448 0 0 1 0-896m-55.808 536.384l-99.52-99.584a38.4 38.4 0 1 0-54.336 54.336l126.72 126.72a38.27 38.27 0 0 0 54.336 0l262.4-262.464a38.4 38.4 0 1 0-54.272-54.336z" />
+                </svg>
+                <p class="text-xl">You're Signed up!</p>
+            </div>
+
+            <div class="w-full my-6 rounded bg-gray-200 flex-col gap-3 justify-center items-center p-3 hidden"
+                id="detailsEl">
+                <div class="space-y-3">
+                    <h3 class="font-semibold text-xl mb-6">Your details are submitted!</h3>
+                    <p class="detail-name">Your Name</p>
+                    <p class="detail-email">Your Email</p>
+                    <p class="detail-age">Your Age</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="/components/task3/main.js"></script>
+</body>
+
+</html>

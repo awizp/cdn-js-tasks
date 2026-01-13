@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/cdn-favicon-512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwindcss stylesheet -->
+    <link rel="stylesheet" href="/components/task6/style.css">
+
+    <title>Active navigation links | Task6</title>
+</head>
+
+<body class="bg-black text-white">
+    <!--***** header element *****-->
+    <header>
+        <nav class="navbar_section flex justify-between items-center gap-3 px-5 py-3 fixed top-0 w-full bg-black">
+            <!-- cdn logo -->
+            <div class="w-25 h-10">
+                <img src="/img/cdn-white.svg" alt="CyberDude Networks Logo" class="object-contain w-full h-full">
+            </div>
+
+            <!-- navigation links -->
+            <div class="flex gap-8 justify-center items-center">
+                <li><a href="#about" class="navigation_links">About</a></li>
+                <li><a href="#products" class="navigation_links">Products</a></li>
+                <li><a href="#employee" class="navigation_links">Employee</a></li>
+                <li><a href="#contact" class="navigation_links">Contact</a></li>
+            </div>
+        </nav>
+    </header>
+
+    <!--***** header element *****-->
+    <main>
+        <section class="section_style bg-zinc-950" id="home">Home Element</section>
+        <section class="section_style bg-zinc-800" id="about">About Element</section>
+        <section class="section_style bg-zinc-950" id="products">Products Element</section>
+        <section class="section_style bg-zinc-800" id="employee">Employee Element</section>
+        <section class="section_style bg-zinc-950" id="contact">Contact Element</section>
+    </main>
+
+    <!-- main javascript -->
+    <script type="module" src="/components/task6/main.js"></script>
+</body>
+
+</html>

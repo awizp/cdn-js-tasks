@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="/img/cdn-favicon-512.png" />
+
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <title>Finding the object in array | Task 2 using switch case</title>
+</head>
+
+<body>
+    <main class="w-full flex flex-col items-center p-3 py-10 gap-5">
+        <h2 class="text-3xl bolder">Finding the object in array</h2>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-5">
+            <p class="text-xl semibold mb-3">Question is to finding the array of object using switch method</p>
+
+            <code class="bg-gray-200 rounded overflow-hidden p-5">
+                <p>let arrayOfObjects = [
+    {
+        fullName: 'Vishnuprakash',
+        age: 20,
+        country: 'India',
+        city: 'Theni',
+        email: 'vishnu@gmail.com',
+    },
+    {
+        fullName: 'Robert',
+        age: 23,
+        country: 'London',
+        city: 'Paris',
+        email: 'robert@gmail.com',
+    }
+];</p>
+            </code>
+        </div>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-16">
+            <p class="text-xl semibold mb-3">Feel free to use dev tools console tab</p>
+
+            <code class="bg-gray-200 rounded overflow-hidden p-5">
+                <p>After finding the name will break the loop</p>
+            </code>
+        </div>
+
+        <div class="flex flex-col items-center p-5 gap-3 mb-10 bg-gray-200 rounded overflow-hidden">
+            <h3 class="text-2xl semibold">Method</h3>
+
+            <p class="text-xl semibold mb-3">Using switch method and while loop to findout object</p>
+
+            <code class="bg-gray-100 rounded overflow-hidden p-5">
+                <p>let i = 0;</p>
+                <p>let result;</p>
+                
+                <p>while (arrayOfObjects.length) {</p>
+                <p>switch (findingName.toLocaleLowerCase()) {</p>
+                <p>case arrayOfObjects[i].fullName.toLocaleLowerCase():</p>
+                <p>result = {</p>
+                <p>fullName: arrayOfObjects[i].fullName,</p>
+                <p>age: arrayOfObjects[i].age,</p>
+                <p>};</p>
+
+                <p>i = arrayOfObjects.length;</p>
+                <p>console.log('Found the person,' + result.fullName);</p>
+                <p>break;</p>
+
+                <p>default:</p>
+                <p>console.log("Your name is not in this list");</p>
+                <p>break;</p>
+                <p>}</p>
+
+                <p>i++;</p>
+                <p>}</p>
+
+                <p>console.log(result);</p>
+            </code>
+        </div>
+    </main>
+
+    <script src="/components/task2/main.js"></script>
+</body>
+
+</html>

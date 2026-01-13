@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer components {
+    .navigation_links {
+        @apply font-semibold text-sm hover:text-amber-600 transition-colors;
+    }
+
+    .section_style {
+        @apply flex justify-center items-center text-3xl w-full h-screen;
+    }
+
+    .active-link {
+        @apply text-amber-700;
+    }
+}

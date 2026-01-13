@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/cdn-favicon-512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="/components/task7/style.css">
+
+    <title>Welcome message with greetings | Task 7</title>
+</head>
+
+<body>
+    <section class="flex flex-col justify-center items-center gap-5">
+
+        <!-- header -->
+        <h2 class="text-4xl font-bold text-center mb-10 hidden" id="heading">Please Enter Your Name</h2>
+
+        <div class="w-full" id="input-container">
+            <!-- input container -->
+            <div class="bg-zinc-900 w-full rounded-xl p-5 flex flex-col justify-center items-center gap-5 space-y-3">
+                <div class="w-full flex flex-col justify-center items-start gap-3">
+                    <label for="fullName" class="text-sm text-gray-300">Your Full Name:</label>
+                    <input type="text" placeholder="Enter your name" id="fullName"
+                        class="p-3 border-2 border-gray-500/20 rounded w-full outline-none bg-zinc-800 text-white"
+                        required>
+
+                    <!-- error message -->
+                    <p class="text-red-500 text-xs font-semibold mt-1 hidden" id="errorMessage">* Please enter a valid
+                        name</p>
+                </div>
+
+                <!-- submit button -->
+                <button type="button" id="btn"
+                    class="px-3 py-2 bg-purple-700 text-white cursor-pointer rounded hover:bg-purple-800 transition-colors w-full">Submit</button>
+            </div>
+        </div>
+
+        <!-- refresh button -->
+        <button type="button" id="refreshBtn"
+            class="px-3 py-2 bg-purple-700 text-white cursor-pointer rounded hover:bg-purple-800 mx-auto transition-colors hidden">Resubmit</button>
+    </section>
+
+    <!-- main javascript -->
+    <script type="module" src="/components/task7/main.js"></script>
+</body>
+
+</html>
