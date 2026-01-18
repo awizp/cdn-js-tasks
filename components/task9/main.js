@@ -27,6 +27,11 @@ let btnArr = [
     },
     {
         id: 6,
+        name: "Clear",
+        idAttr: "clear-btn",
+    },
+    {
+        id: 7,
         name: "Copy",
         idAttr: "copy-btn",
     },
@@ -124,6 +129,9 @@ btnEls.forEach((btn) => {
                 messageFunc('Text style changed ✨');
 
                 return textAreaEl.classList.toggle('italic');
+
+            case 'clear-btn':
+                return textAreaEl.value = "";
 
             case 'copy-btn':
                 let copiedText = textContent;
