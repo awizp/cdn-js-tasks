@@ -26,3 +26,38 @@
         @apply border-2 border-white text-white rounded-xl p-2 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
     }
 }
+
+@layer folder-structure {
+    .task-folder {
+        @apply w-fit flex flex-col justify-center gap-3 items-start;
+    }
+
+    .folder-structure {
+        @apply w-45 h-35 inline-block relative bg-zinc-900 border-2 border-white/20 hover:translate-y-[-5px] transition duration-300;
+    }
+
+    .folder-structure {
+        border-radius: 0 10px 10px 10px;
+    }
+
+    .folder-structure::before {
+        content: '';
+        border-radius: 10px 20px 0 0;
+    }
+
+    .folder-structure::before {
+        @apply w-[50%] h-[1rem] border-t-2 border-l-2 border-white/20 bg-zinc-900 absolute top-[-0.8rem] left-[-2px];
+    }
+
+    .folder-task {
+        @apply font-semibold text-gray-300 text-sm absolute bottom-[2rem] left-2;
+    }
+
+    .folder-date {
+        @apply text-gray-500 text-xs absolute bottom-[.75rem] left-2;
+    }
+
+    .folder-name {
+        @apply font-semibold text-sm hover:text-orange-700 italic transition-colors duration-300;
+    }
+}
