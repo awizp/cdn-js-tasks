@@ -19,6 +19,7 @@ export default defineConfig({
                 task6: resolve(__dirname, '/components/task6/index.html'),
                 task7: resolve(__dirname, '/components/task7/index.html'),
                 task8: resolve(__dirname, '/components/task8/index.html'),
+                task9: resolve(__dirname, '/components/task9/index.html'),
             }
         }
     }
