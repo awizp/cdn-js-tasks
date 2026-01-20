@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     /* custom fonts */
     --font-roboto: "Roboto", sans-serif;
@@ -9,21 +11,21 @@
 
 @layer base {
     body {
-        @apply bg-black text-white w-full font-roboto;
+        @apply bg-black dark:bg-white text-white dark:text-black w-full h-screen font-roboto;
     }
 }
 
 @layer components {
     .task-item {
-        @apply bg-zinc-800 rounded-xl p-3 relative text-center hover:translate-y-[-3px] border-b-2 border-transparent hover:border-orange-800 transition cursor-pointer duration-300 grid grid-cols-1 gap-2 text-sm md:grid-cols-3;
+        @apply bg-zinc-600 dark:bg-zinc-500 rounded-xl p-3 relative text-center hover:translate-y-[-3px] border-b-2 border-transparent hover:border-orange-800 transition cursor-pointer duration-300 grid grid-cols-1 gap-2 text-sm md:grid-cols-3;
     }
 
     .back-btn {
-        @apply mr-5 border-2 border-white text-white rounded-xl py-1.5 px-3 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
+        @apply mr-5 border-2 border-white dark:border-black dark:text-black text-white rounded-xl py-1.5 px-3 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
     }
 
     .link-btn {
-        @apply border-2 border-white text-white rounded-xl p-2 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
+        @apply border-2 border-white dark:border-black text-white dark:text-black rounded-xl p-2 cursor-pointer hover:text-orange-600 hover:bg-white/20 dark:hover:bg-white/80 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
     }
 }
 

@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     /* custom fonts */
     --font-roboto: "Roboto", sans-serif;
@@ -9,7 +11,7 @@
 
 @layer base {
     body {
-        @apply bg-black text-white w-full h-screen font-roboto;
+        @apply bg-black dark:bg-white text-white dark:text-black w-full h-screen font-roboto;
     }
 }
 
@@ -19,6 +21,6 @@
     }
 
     .link-btn {
-        @apply border-2 border-white text-white rounded-xl p-2 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
+        @apply border-2 border-white dark:border-black text-white dark:text-black rounded-xl p-2 cursor-pointer hover:text-orange-600 hover:bg-white/20 dark:hover:bg-white/80 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
     }
 }
