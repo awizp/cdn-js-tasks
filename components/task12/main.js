@@ -40,7 +40,7 @@ const appendFoods = () => {
         let imgEl = document.createElement('img');
         imgEl.setAttribute('src', meals?.strMealThumb);
         imgEl.setAttribute('alt', meals?.strMeal);
-        imgEl.className = 'w-full h-full object-cover';
+        imgEl.className = 'w-full h-full object-cover rounded-xl';
         imageDivEl.append(imgEl);
 
         itemDivEl.append(imageDivEl, foodBodyEl);

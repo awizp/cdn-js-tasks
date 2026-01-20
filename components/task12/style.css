@@ -12,11 +12,15 @@
     }
 
     .food-item {
-        @apply w-full rounded-xl p-5 border-2 border-white/30 hover:bg-zinc-900/50 transition duration-300 hover:translate-y-[-3px] hover:shadow hover:border-white;
+        @apply w-full rounded-xl p-5 hover:bg-zinc-900/50 transition duration-300 hover:translate-y-[-3px] hover:shadow hover:border-white;
     }
 
     .food-image {
-        @apply w-full rounded-xl overflow-hidden;
+        @apply w-full rounded-xl overflow-hidden p-5 border-2 border-white/30;
+    }
+
+    .food-item:hover .food-image {
+        @apply border-white;
     }
 
     .food-body {
