@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+@layer base {
+    body {
+        @apply w-full bg-black text-white overflow-hidden;
+    }
+}
+
+@layer components {
+    .text-area {
+        @apply bg-zinc-900 border-2 border-white/20 rounded-xl outline-none p-3 w-full h-65;
+    }
+
+    .count-message {
+        @apply w-full text-right text-sm text-gray-300 italic;
+    }
+
+    .alert-message {
+        @apply w-full text-left text-sm text-red-500 font-semibold hidden;
+    }
+
+    .btn-style {
+        @apply rounded-xl px-3 py-2 bg-zinc-800 cursor-pointer hover:bg-orange-500 transition-colors duration-300 font-semibold;
+    }
+
+    .message-slide {
+        @apply translate-x-[120%] opacity-0;
+    }
+
+    .back-btn {
+        @apply border-2 border-orange-600 text-orange-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-orange-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
+    }
+}

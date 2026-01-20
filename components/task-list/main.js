@@ -41,8 +41,8 @@ window.addEventListener('load', () => {
     let logoTheme = localStorage.getItem('logo');
 
     if (logoTheme === 'dark') {
-        darkLogo.style.display = 'block';
-        whiteLogo.style.display = 'none';
+        darkLogo.style.display = 'none';
+        whiteLogo.style.display = 'block';
     }
 
     if (logoTheme === 'white') {
