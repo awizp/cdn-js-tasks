@@ -33,6 +33,38 @@
         </nav>
     </header>
 
+    <main class="w-full">
+        <section class="container mx-auto py-10 px-3 relative">
+
+            <div class="flex flex-col justify-center items-center gap-5">
+                <h1 class="text-3xl font-bold mb-10">Food items for your delivery</h1>
+
+                <!-- loading container -->
+                <p class="text-xl font-semibold italic hidden" id="loading-message">Loading food items...</p>
+
+                <!-- products container -->
+                <div id="products-container"
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"></div>
+
+                <!-- cart icon -->
+                <div class="cart-div" id="cart-div">
+                    <!-- cart icon -->
+                    <div class="w-6 h-6 text-xl flex justify-center items-center">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </div>
+                    <div class="cart-badge" id="cart-badge">
+                        0
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ionic icons script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!-- main javascript -->
     <script type="module" src="/components/task12/main.js"></script>
 </body>

@@ -10,4 +10,41 @@
     .back-btn {
         @apply border-2 border-orange-600 text-orange-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-orange-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
     }
+
+    .food-item {
+        @apply w-full rounded-xl p-5 border-2 border-white/30 hover:bg-zinc-900/50 transition duration-300 hover:translate-y-[-3px] hover:shadow hover:border-white;
+    }
+
+    .food-image {
+        @apply w-full rounded-xl overflow-hidden;
+    }
+
+    .food-body {
+        @apply flex justify-between items-center mt-3 bg-zinc-800 rounded-xl p-3;
+    }
+
+    .btn-container {
+        @apply flex justify-center items-center gap-3;
+    }
+
+    .plus-icon,
+    .minus-icon {
+        @apply w-7 h-7 rounded p-1 text-xl cursor-pointer flex justify-center items-center transition-colors duration-300 select-none;
+    }
+
+    .plus-icon {
+        @apply bg-green-700 hover:bg-green-800;
+    }
+
+    .minus-icon {
+        @apply bg-red-700 hover:bg-red-800;
+    }
+
+    .cart-div {
+        @apply absolute top-10 right-10 bg-white text-black rounded p-2 cursor-pointer transition duration-300 hover:translate-y-[-3px] select-none;
+    }
+
+    .cart-badge {
+        @apply absolute w-5 h-5 flex justify-center items-center top-[-9px] right-[-15px] font-semibold border-2 border-black p-3 rounded-full;
+    }
 }
