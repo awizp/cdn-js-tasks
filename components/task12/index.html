@@ -15,25 +15,39 @@
 <body>
     <!-- ***** header element ***** -->
     <header class="w-full bg-black text-white">
-        <nav class="w-full">
+        <nav class="w-full fixed top-0 z-10 bg-black">
             <!-- company logo -->
             <div class="container mx-auto flex justify-between items-center px-3 py-2 pt-5">
                 <div class="w-28 h-8 flex gap-2 items-center">
                     <img src="/img/cdn-white.svg" alt="CyberDude Networks Logo" class="w-full h-full object-contain">
                 </div>
 
-                <!-- back button -->
-                <a href="/components/task-list/" class="back-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
-                    </svg>
-                    <p class="font-semibold">Back</p>
-                </a>
+                <div class="flex gap-5 justify-center items-center">
+                    <!-- cart icon -->
+                    <div class="cart-div" id="cart-div">
+                        <!-- cart icon -->
+                        <div class="w-6 h-6 text-xl flex justify-center items-center">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </div>
+                        <p class="mr-1">Cart</p>
+                        <div class="cart-badge" id="cart-badge">
+                            0
+                        </div>
+                    </div>
+
+                    <!-- back button -->
+                    <a href="/components/task-list/" class="back-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+                        </svg>
+                        <p class="font-semibold">Back</p>
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
 
-    <main class="w-full">
+    <main class="w-full mt-10">
         <section class="container mx-auto py-10 px-3 relative">
 
             <div class="flex flex-col justify-center items-center gap-5">
@@ -45,17 +59,6 @@
                 <!-- products container -->
                 <div id="products-container"
                     class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"></div>
-
-                <!-- cart icon -->
-                <div class="cart-div" id="cart-div">
-                    <!-- cart icon -->
-                    <div class="w-6 h-6 text-xl flex justify-center items-center">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </div>
-                    <div class="cart-badge" id="cart-badge">
-                        0
-                    </div>
-                </div>
             </div>
 
         </section>
