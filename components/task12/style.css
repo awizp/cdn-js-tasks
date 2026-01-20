@@ -16,7 +16,7 @@
     }
 
     .food-image {
-        @apply w-full rounded-xl overflow-hidden p-5 border-2 border-white/30;
+        @apply w-full rounded-xl overflow-hidden p-5 border-2 border-white/30 transition-colors duration-300;
     }
 
     .food-item:hover .food-image {
