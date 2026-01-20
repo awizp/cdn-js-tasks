@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply w-full bg-black text-white;
+    }
+}
+
+@layer components {
+    .back-btn {
+        @apply border-2 border-orange-600 text-orange-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-orange-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
+    }
+}

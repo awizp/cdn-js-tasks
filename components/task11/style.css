@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply w-full h-full bg-black text-white;
+    }
+}
+
+@layer components {
+    .back-btn {
+        @apply border-2 border-orange-600 text-orange-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-orange-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
+    }
+
+    .todo-input {
+        @apply w-full outline-none h-full bg-zinc-800 rounded-xl p-3 border-2 border-white/20;
+    }
+
+    .todo-add {
+        @apply w-9 h-9 rounded-full bg-yellow-500 stroke-4 flex justify-center items-center text-2xl cursor-pointer select-none;
+    }
+
+    .todo-item {
+        @apply w-full bg-zinc-800 rounded-xl p-3 font-semibold cursor-default flex justify-between items-center hover:bg-zinc-900 transition duration-300 hover:translate-y-[-2px] select-none;
+    }
+
+    .todo-delete {
+        @apply w-5 h-5 rounded-full text-white bg-red-400 text-xl p-0.5 flex justify-center items-center cursor-pointer;
+    }
+
+    .todo-completed {
+        @apply text-gray-400 line-through;
+    }
+}
+
+@layer main-section {
+    body {
+        background: url('/img/todo-banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body::before {
+        content: '';
+    }
+
+    .main-section {
+        @apply w-full h-full;
+    }
+
+    .main-section {
+        z-index: 10;
+    }
+
+    body::before {
+        @apply fixed w-full h-full top-0 left-0 bg-black opacity-[97%] z-[-1];
+    }
+}
