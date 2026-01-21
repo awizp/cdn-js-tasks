@@ -11,7 +11,7 @@
 
 @layer base {
     body {
-        @apply bg-black dark:bg-white text-white dark:text-black w-full h-screen font-roboto;
+        @apply bg-black dark:bg-zinc-200 text-white dark:text-black w-full h-screen font-roboto;
     }
 }
 

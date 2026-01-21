@@ -27,3 +27,27 @@
         @apply border-2 border-orange-600 text-orange-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-orange-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
     }
 }
+
+@layer main-section {
+    body {
+        background: url('/img/todo-banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body::before {
+        content: '';
+    }
+
+    .main-section {
+        @apply w-full h-full;
+    }
+
+    .main-section {
+        z-index: 10;
+    }
+
+    body::before {
+        @apply fixed w-full h-full top-0 left-0 bg-black opacity-90 z-[-1];
+    }
+}

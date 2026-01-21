@@ -7,29 +7,44 @@
 @theme {
     /* custom fonts */
     --font-roboto: "Roboto", sans-serif;
+
+    /* custom breakpoint */
+    --breakpoint-xs: 450px;
 }
 
 @layer base {
     body {
-        @apply bg-black dark:bg-white text-white dark:text-black w-full h-screen font-roboto;
+        @apply bg-black dark:bg-zinc-200 text-white dark:text-black w-full h-screen font-roboto transition;
     }
 }
 
 @layer components {
+    .task-week {
+        @apply text-xl text-orange-800 dark:text-orange-500 font-bold w-full text-center;
+    }
+
     .task-item {
         @apply bg-zinc-600 dark:bg-zinc-500 rounded-xl p-3 relative text-center hover:translate-y-[-3px] border-b-2 border-transparent hover:border-orange-800 transition cursor-pointer duration-300 grid grid-cols-1 gap-2 text-sm md:grid-cols-3;
     }
 
     .back-btn {
-        @apply mr-5 border-2 border-white dark:border-black dark:text-black text-white rounded-xl py-1.5 px-3 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
+        @apply mr-5 border-2 border-white dark:border-black dark:text-black text-white rounded-xl py-1.5 px-3 cursor-pointer hover:text-orange-600 hover:bg-white/20 hover:border-orange-600 transition-colors duration-300 hidden md:flex gap-2 items-center;
     }
 
     .link-btn {
+        @apply border-2 border-white dark:border-black text-white dark:text-black rounded-xl p-2 cursor-pointer hover:text-orange-600 hover:bg-white/20 dark:hover:bg-white/80 hover:border-orange-600 transition-colors duration-300 hidden md:flex gap-2 items-center;
+    }
+
+    .sidebar-btn {
         @apply border-2 border-white dark:border-black text-white dark:text-black rounded-xl p-2 cursor-pointer hover:text-orange-600 hover:bg-white/20 dark:hover:bg-white/80 hover:border-orange-600 transition-colors duration-300 flex gap-2 items-center;
     }
 }
 
 @layer folder-structure {
+    .task-container {
+        @apply grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10;
+    }
+
     .task-folder {
         @apply w-fit flex flex-col justify-center gap-3 items-start;
     }
@@ -52,14 +67,32 @@
     }
 
     .folder-task {
-        @apply font-semibold text-gray-300 text-sm absolute bottom-[2rem] left-2;
+        @apply font-semibold text-gray-200 text-sm absolute bottom-[2rem] left-2;
     }
 
     .folder-date {
-        @apply text-gray-500 text-xs absolute bottom-[.75rem] left-2;
+        @apply text-gray-400 text-xs absolute bottom-[.75rem] left-2;
     }
 
     .folder-name {
-        @apply font-semibold text-sm hover:text-orange-700 italic transition-colors duration-300;
+        @apply font-semibold text-sm hover:text-orange-500 italic transition-colors duration-300;
+    }
+}
+
+@layer mobile-menu {
+    .mobile-menu {
+        @apply flex md:hidden justify-center items-start gap-10 bg-zinc-900 dark:bg-zinc-300 shadow-sm fixed w-full xs:w-100 h-screen top-0 right-0 z-50 p-10 transition-all ease-in-out duration-300;
+    }
+
+    .mobile-menu.active-bar {
+        @apply translate-x-[120%];
+    }
+
+    .menu-btn {
+        @apply md:hidden select-none;
+    }
+
+    .close-btn {
+        @apply absolute top-5 left-5;
     }
 }

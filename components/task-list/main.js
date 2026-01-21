@@ -50,3 +50,19 @@ window.addEventListener('load', () => {
         whiteLogo.style.display = 'none';
     }
 });
+
+// toggle the sidebar menu,
+const menuBtnEls = document.querySelectorAll('.menu-btn');
+const menuBarEl = document.querySelector('#mobile-bar');
+
+const menuBarHandler = () => {
+    if (menuBarEl.classList.contains('active-bar')) {
+        menuBarEl.classList.remove('active-bar');
+    } else {
+        menuBarEl.classList.add('active-bar');
+    }
+};
+
+menuBtnEls.forEach((menuBtn) => {
+    menuBtn.addEventListener('click', menuBarHandler);
+});
