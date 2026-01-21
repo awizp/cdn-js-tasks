@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply w-full bg-black text-white;
+    }
+}
+
+@layer components {
+    .accordian-container {
+        @apply w-full rounded-xl select-none overflow-hidden transition-all duration-600 ease-in-out;
+    }
+
+    .accordian-question {
+        @apply w-full p-3 bg-zinc-700 cursor-pointer;
+    }
+
+    .accordian-answer {
+        @apply w-full font-semibold bg-zinc-900 p-3 px-4 text-sm h-0 hidden rounded-b-xl transition-all duration-600 ease-in-out;
+    }
+
+    .accordian-answer.active {
+        @apply block h-full;
+    }
+
+    .back-btn {
+        @apply border-2 border-orange-600 text-orange-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-orange-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
+    }
+}

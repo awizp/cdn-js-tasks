@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/cdn-favicon-512.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="/components/task14/style.css">
+
+    <title>FAQ Section | Task 14</title>
+</head>
+
+<body>
+    <!-- ***** header element ***** -->
+    <header class="w-full bg-black text-white">
+        <nav class="w-full">
+            <!-- company logo -->
+            <div class="container mx-auto flex justify-between items-center px-3 py-5">
+                <div class="w-28 h-8 flex gap-2 items-center">
+                    <img src="/img/cdn-white.svg" alt="CyberDude Networks Logo" class="w-full h-full object-contain">
+                </div>
+
+                <!-- back button -->
+                <a href="/components/task-list/" class="back-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="m7.825 13l5.6 5.6L12 20l-8-8l8-8l1.425 1.4l-5.6 5.6H20v2z" />
+                    </svg>
+                    <p class="font-semibold">Back</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="w-full">
+        <section class="w-full container mx-auto py-10">
+
+            <h1 class="mb-10 text-center text-3xl font-bold">Frequently asked questions!</h1>
+
+            <div class="w-full md:w-[60%] mx-auto flex justify-center items-center">
+
+                <div class="w-full space-y-5">
+                    <div class="accordian-container">
+                        <!-- accordian 1 -->
+                        <div class="accordian-question">
+                            <p>How is this internship different from YouTube tutorials?</p>
+                        </div>
+                        <div class="accordian-answer active" id="accordian-ans1">
+                            <p>Crystal clear and straight to the point, each session is concise and packed with
+                                feedbacks of your projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordian-container">
+                        <!-- accordian 2 -->
+                        <div class="accordian-question">
+                            <p>Is there a money needed to enter this internship?</p>
+                        </div>
+                        <div class="accordian-answer" id="accordian-ans2">
+                            <p>No, there’s no fees required for this internship. If you find the internship isn’t a good
+                                fit, you can request a withdraw with one week period.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordian-container">
+                        <!-- accordian 3 -->
+                        <div class="accordian-question">
+                            <p>How long will it takes to complete?</p>
+                        </div>
+                        <div class="accordian-answer" id="accordian-ans3">
+                            <p>If you enter this internship, you’ll have six months of training, allowing you to explore
+                                your curiosity about your dream career.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- main javascript -->
+    <script type="module" src="/components/task14/main.js"></script>
+</body>
+
+</html>
