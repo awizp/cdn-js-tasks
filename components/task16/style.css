@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply w-full h-screen bg-black text-white;
+    }
+}
+
+@layer components {
+    .video-banner {
+        @apply w-full relative h-screen;
+    }
+
+    .video-banner video {
+        @apply absolute top-0 left-0 w-full h-screen z-[-2] object-cover;
+    }
+
+    .video-banner::before {
+        content: '';
+    }
+
+    .video-banner::before {
+        @apply absolute top-0 left-0 w-full h-screen z-[-1] bg-black opacity-50;
+    }
+
+    .quote-content {
+        @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-black p-10 rounded-xl text-white container w-full flex flex-col justify-center items-center opacity-85;
+    }
+
+    .quote-content h1 {
+        @apply text-3xl font-bold italic mb-5 text-center;
+    }
+
+    .quote-content button {
+        @apply rounded-xl bg-orange-600 transition-colors hover:bg-orange-700 duration-300 cursor-pointer px-3 py-2 mt-10 font-semibold;
+    }
+
+    .back-btn {
+        @apply border-2 border-orange-600 text-orange-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-orange-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
+    }
+}
