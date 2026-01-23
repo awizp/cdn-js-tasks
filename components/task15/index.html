@@ -9,7 +9,7 @@
     <!-- tailwind css -->
     <link rel="stylesheet" href="/components/task15/style.css">
 
-    <title>Searching or Filtering the list items | Task 15</title>
+    <title>Filtering the list items | Task 15</title>
 </head>
 
 <body>
@@ -32,6 +32,41 @@
             </div>
         </nav>
     </header>
+
+    <!-- ***** main element ***** -->
+    <main class="w-full">
+        <section class="container mx-auto py-10 px-3 relative">
+
+            <div class="flex flex-col justify-center items-center gap-5">
+                <h1 class="text-3xl font-bold mb-3 italic">Filter out your favourite foods</h1>
+
+                <div class="input-group">
+                    <select name="country" id="country-items">
+                        <option value="Indian" selected>India</option>
+                        <option value="Canadian">Canada</option>
+                        <option value="Chinese">China</option>
+                        <option value="American">America</option>
+                        <option value="Russian">Russia</option>
+                        <option value="Japanese">Japan</option>
+                    </select>
+
+                    <input type="text" placeholder="Search your food item..." id="search-item">
+                </div>
+
+                <!-- loading container -->
+                <p class="text-xl font-semibold italic hidden" id="loading-message">Loading food items...</p>
+
+                <!-- products container -->
+                <div id="products-container"
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"></div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- ionic icons script -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- main javascript -->
     <script type="module" src="/components/task15/main.js"></script>
