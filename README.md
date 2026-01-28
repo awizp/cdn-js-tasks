@@ -1,6 +1,6 @@
-## ✨ Javascript Learning Journey | JS & DOM:
+## ✨ Javascript Learning Journey | JS & DOM
 
-   A landing site for showcase the mini projects which I have worked and updated with date and commited daily progress.
+    A landing site for showcase the mini projects which I have worked and updated with date and commited daily progress.
 
 ### 📒 Stacks used:
 
