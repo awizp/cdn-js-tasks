@@ -1,8 +1,8 @@
-# Javascript Learning Journey through building mini builds | JS & DOM:
+# ✨ Javascript Learning Journey through building mini builds | JS & DOM:
 
    A multiple page landing site for showcase the mini projects which I have worked and updated with date and commited daily progress.
 
-### Stacks used:
+### 📒 Stacks used:
 
    1. Javascript
    2. Tailwindcss
@@ -10,20 +10,20 @@
    4. Ionic icons
    5. REST API
 
-**demo:** [awizp-js.netlify.app](https://awizp-js.netlify.app/)
+**🔗 demo:** [awizp-js.netlify.app](https://awizp-js.netlify.app/)
 
 ---
  
-### Palindrome finder in array | Task 1
+### ⚡ Palindrome finder in array | Task 1
 
    * Create a array of 10 items or names which contains palindrome word  
    * Loop thorugh the array and find the palindrome words
 
-   **GitHub link:** [palindrome finder](https://github.com/awizp/palindrome-task) 
+   **🔗 GitHub link:** [palindrome finder](https://github.com/awizp/palindrome-task) 
 
 ---
 
-### Finding object in array | Task 2
+### ⚡ Finding object in array | Task 2
 
    * Create an array with names and their properties
    * Loop through the array to get the key items
@@ -31,7 +31,7 @@
 
 ---
 
-### Signup page | Task 3
+### ⚡ Signup page | Task 3
 
    * Added a form which asks details about user in index file
    * Get the user details and validate by regular expression
@@ -41,7 +41,7 @@
 
 ---
 
-### Products list appending with fragment method | Task 4
+### ⚡ Products list appending with fragment method | Task 4
 
    * Added a array which contains 50 products in main.js file
    * Loop through the array to get all products by it's length
@@ -52,7 +52,7 @@
 
 ---
 
-### Employees adding list | Task 5
+### ⚡ Employees adding list | Task 5
 
    * Added a simple form to get the employee details
    * Added a validation thorugh form details
@@ -63,7 +63,7 @@
 
 ---
 
-### Active navigation links | Task 6
+### ⚡ Active navigation links | Task 6
     
    * Added different sections and their navigation links respective
    * Get the navigation links and added style element while that section being active in window
@@ -72,7 +72,7 @@
 
 ---
 
-### Greetings message | Task 7
+### ⚡ Greetings message | Task 7
     
    * Added a input which gets the username or name in index.html file
    * Added a validation through RegEx to check the credentials
@@ -82,7 +82,7 @@
 
 ---
 
-### Background colour changer | Task 8
+### ⚡ Background colour changer | Task 8
 
    * Added a simple div element with random colour buttons
    * Get the elements by them id value using javascript
@@ -93,7 +93,7 @@
 
 ---
 
-### Text formatter | Task 9
+### ⚡ Text formatter | Task 9
 
    * Added a textarea to add document of words in index.html file
    * Get the words by storing in variable and remove the unwanted spaces in between them
@@ -103,7 +103,7 @@
 
 ---
 
-### Password hide and show | Task 10
+### ⚡ Password hide and show | Task 10
 
    * Added a simple form to get user details
    * In password input added a toggle button which indicates the type of input
@@ -113,7 +113,7 @@
 
 ---
 
-### Dynamic bullet points | Task 11
+### ⚡ Dynamic bullet points | Task 11
 
    * Added a simple input field to get the tasks from user
    * Get the tasks and remove the unwated spaces in between words
@@ -124,7 +124,7 @@
 
 ---
 
-### Adding to the cart | Task 12
+### ⚡ Adding to the cart | Task 12
 
    * Fetching the food items from mealdb API
    * Added a buttons which used to count the number of foods ordered in each food product
@@ -135,7 +135,7 @@
 
 ---
 
-### Live character counting | Task 13
+### ⚡ Live character counting | Task 13
 
    * Get the document of words from the index.html file
    * Limit the words typing within 200 words with limit setter
@@ -146,7 +146,7 @@
 
 ---
 
-### FAQ section with accordian | Task 14
+### ⚡ FAQ section with accordian | Task 14
 
    * Added a questions and answers in seperate div elements
    * Get them by their id values and added style elements
@@ -157,7 +157,7 @@
 
 ---
 
-### Search or Filter a list | Task 15
+### ⚡ Search or Filter a list | Task 15
 
    * Fetch the food products from mealdb to show them by country vice
    * Added a select element to choose which country food which user want to see
@@ -167,7 +167,7 @@
 
 ---
 
-### Random qoute generator | Task 16
+### ⚡ Random qoute generator | Task 16
 
    * Fetch the random quotes using Ninja API
    * Added a video section for beautiful ambience
@@ -177,7 +177,7 @@
 
 ---
 
-### Simple calculator application | Task 17
+### ⚡ Simple calculator application | Task 17
 
    * Generates the UI which looks in android model calculator
    * Get the values and operandes thorugh functions
@@ -188,7 +188,7 @@
 
 ---
 
-### GitHub profile finder | Task 18
+### ⚡ GitHub profile finder | Task 18
 
    * Shows the default github profile when dom loaded
    * Added user field to search the user by their user id
