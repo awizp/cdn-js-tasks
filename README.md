@@ -37,7 +37,7 @@
    * Get the user details and validate by regular expression
    * If user added correct input means shows the signed up confirmation
 
-   **GitHub link:** [Signup form](https://github.com/awizp/cdn-task-input-form) 
+   **🔗 GitHub link:** [Signup form](https://github.com/awizp/cdn-task-input-form) 
 
 ---
 
@@ -48,7 +48,7 @@
    * Create a fragment element to append the products in this element
    * Creating a new div element to append the fragment object which contains products
 
-   **GitHub link:** [Fragment appending](https://github.com/awizp/cdn-task-fragment-appending)
+   **🔗 GitHub link:** [Fragment appending](https://github.com/awizp/cdn-task-fragment-appending)
 
 ---
 
@@ -59,7 +59,7 @@
    * Append the details in seperate container to show the list items
    * Seperate developer roles by differentiate with background colour
    
-   **GitHub link:** [Employees list](https://github.com/awizp/cdn-task-employee-todolist)
+   **🔗 GitHub link:** [Employees list](https://github.com/awizp/cdn-task-employee-todolist)
 
 ---
 
@@ -68,7 +68,7 @@
    * Added different sections and their navigation links respective
    * Get the navigation links and added style element while that section being active in window
 
-   **GitHub link:** [Active navigation links](https://github.com/awizp/cdn-task-active-navlinks)
+   **🔗 GitHub link:** [Active navigation links](https://github.com/awizp/cdn-task-active-navlinks)
 
 ---
 
@@ -78,7 +78,7 @@
    * Added a validation through RegEx to check the credentials
    * If user enters a name, greeting message shows to welcomes the user
 
-   **GitHub link:** [Greetings message](https://github.com/awizp/cdn-task-greetings-message)
+   **🔗 GitHub link:** [Greetings message](https://github.com/awizp/cdn-task-greetings-message)
 
 ---
 
@@ -89,7 +89,7 @@
    * Added a function which simply changes the background body colour
    * Added a toggle to change dark and light theme as well
 
-   **GitHub link:** [Background colour changer](https://github.com/awizp/cdn-task-backgroundcolor-changer)
+   **🔗 GitHub link:** [Background colour changer](https://github.com/awizp/cdn-task-backgroundcolor-changer)
 
 ---
 
@@ -99,7 +99,7 @@
    * Get the words by storing in variable and remove the unwanted spaces in between them
    * Added uppercase, lowercase, capitalize, bold style, italic style, clear and copy functions
 
-   **GitHub link:** [Text formatter](https://github.com/awizp/cdn-task-text-formatter)
+   **🔗 GitHub link:** [Text formatter](https://github.com/awizp/cdn-task-text-formatter)
 
 ---
 
@@ -109,7 +109,7 @@
    * In password input added a toggle button which indicates the type of input
    * Using toggle function to change the input type to show or hide the password
 
-   **GitHub link:** [Password hide and show](https://github.com/awizp/cdn-task-password-visibility)
+   **🔗 GitHub link:** [Password hide and show](https://github.com/awizp/cdn-task-password-visibility)
 
 ---
 
@@ -120,7 +120,7 @@
    * Added a note by adding in seperate div element to show the todo
    * Store the todo in local storage to get them whenever user wanted
 
-   **GitHub link:** [Dynamic bullet points](https://github.com/awizp/cdn-task-todo-list)
+   **🔗 GitHub link:** [Dynamic bullet points](https://github.com/awizp/cdn-task-todo-list)
 
 ---
 
@@ -131,7 +131,7 @@
    * Added a cart with badge which shows how many products ordered
    * Limited the cart within 50 food products and don't allow exceed the limit
 
-   **GitHub link:** [Adding to the cart](https://github.com/awizp/cdn-task-add-cart)
+   **🔗 GitHub link:** [Adding to the cart](https://github.com/awizp/cdn-task-add-cart)
 
 ---
 
@@ -142,7 +142,7 @@
    * If user exceeded the limit means shows a error
    * Added a substring method to stop the user type exceed limit
 
-   **GitHub link:** [Text limiter](https://github.com/awizp/cdn-task-text-limiter)
+   **🔗 GitHub link:** [Text limiter](https://github.com/awizp/cdn-task-text-limiter)
 
 ---
 
@@ -153,7 +153,7 @@
    * When user clicks the question means the answer will be shows
    * Looping through all accordian to show one accordian at a time
 
-   **GitHub link:** [FAQ section](https://github.com/awizp/cdn-task-faq-section)
+   **🔗 GitHub link:** [FAQ section](https://github.com/awizp/cdn-task-faq-section)
 
 ---
 
@@ -163,7 +163,7 @@
    * Added a select element to choose which country food which user want to see
    * Added a search function that user can look up specific food in that country
 
-   **GitHub link:** [Search/Filter a list](https://github.com/awizp/cdn-task-filtering-list)
+   **🔗 GitHub link:** [Search/Filter a list](https://github.com/awizp/cdn-task-filtering-list)
 
 ---
 
@@ -173,7 +173,7 @@
    * Added a video section for beautiful ambience
    * Randomly generated quotes and that authors by clicking the button
 
-   **GitHub link:** [Random qoute generator](https://github.com/awizp/cdn-task-random-quotes)
+   **🔗 GitHub link:** [Random qoute generator](https://github.com/awizp/cdn-task-random-quotes)
 
 ---
 
@@ -184,7 +184,7 @@
    * Added a function to choose which calculation method to perform
    * Added some scientific calculation methods and can toggle them to show or hide
 
-   **GitHub link:** [Simple calculator](https://github.com/awizp/cdn-task-simple-calculator)
+   **🔗 GitHub link:** [Simple calculator](https://github.com/awizp/cdn-task-simple-calculator)
 
 ---
 
@@ -196,4 +196,4 @@
    * Added a function to show when user exceeded their hour limit
    * Added debounce concept to limit the firing event by users
 
-   **GitHub link:** [GitHub profile finder](https://github.com/awizp/cdn-task-github-userfinder)
+   **🔗 GitHub link:** [GitHub profile finder](https://github.com/awizp/cdn-task-github-userfinder)
