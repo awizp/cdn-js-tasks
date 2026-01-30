@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+    /* custom font */
+    --font-system: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@layer base {
+    body {
+        @apply w-full flex-col bg-black text-white font-system;
+    }
+}
+
+@layer components {
+    .step-title {
+        @apply text-xl mb-4;
+    }
+
+    .text-alert {
+        @apply text-gray-400 text-2xl mb-8;
+    }
+
+    .grid-layout {
+        @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+    }
+
+    .input {
+        @apply w-full bg-black border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition;
+    }
+
+    .text-area {
+        @apply w-full h-65 bg-black border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition;
+    }
+
+    .input.error {
+        @apply border-red-500;
+    }
+
+    .option {
+        @apply flex items-center gap-3 p-4 border border-gray-800 rounded-lg cursor-pointer hover:border-purple-500 transition;
+    }
+
+    .option input {
+        @apply hidden;
+    }
+
+    .option:has(input:checked) {
+        @apply bg-purple-500 text-white;
+    }
+
+    .btn-primary {
+        @apply bg-purple-500 text-black px-6 py-2 rounded-lg font-medium hover:bg-purple-600 transition select-none cursor-pointer;
+    }
+
+    .btn-secondary {
+        @apply border border-gray-700 px-6 py-2 rounded-lg hover:border-purple-500 transition cursor-pointer select-none;
+    }
+
+    .back-btn {
+        @apply border-2 border-purple-600 text-purple-600 rounded-xl p-1 px-3 cursor-pointer hover:text-white hover:bg-purple-600 hover:border-white transition-colors duration-300 flex gap-2 items-center;
+    }
+}
+
+@layer main-section {
+    body {
+        background: url('/img/cost-banner.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body::before {
+        content: '';
+    }
+
+    .main-section {
+        @apply w-full h-full;
+    }
+
+    .main-section {
+        z-index: 10;
+    }
+
+    body::before {
+        @apply fixed w-full h-full top-0 left-0 bg-black opacity-[97%] z-[-1];
+    }
+}

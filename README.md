@@ -197,3 +197,14 @@
    * Added debounce concept to limit the firing event by users
 
    **🔗 GitHub link:** [GitHub profile finder](https://github.com/awizp/cdn-task-github-userfinder)
+
+---
+
+### ⚡ Website cost estimation | Task 19
+
+   * Added step by step questions for the client to fillup the details
+   * Get the user details with RegEx validation
+   * Get the expectation and the customized idea from the user
+   * Lastly shows the quota estimated and download as pdf format
+
+   **🔗 GitHub link:** [Website cost estimation](https://github.com/awizp/cdn-task-website-cost-estimation)
