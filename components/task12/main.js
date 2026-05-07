@@ -10,7 +10,7 @@ let count = 0;
 
 // fetching the foods,
 const fetchingProducts = async () => {
-    let foodUrl = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian';
+    let foodUrl = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=India';
 
     let res = await fetch(foodUrl);
     let data = await res.json();
